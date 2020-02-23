@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<Partitura nombre="Another brick in the wall" tempo="60">
+	  <Compases>
+	      <Compas>
+
+  <ValorMusical duracion="NEGRA" momentoEjecucion="22675">
+  	<Nota>DO</Nota>
+  </ValorMusical>
+ <ValorMusical duracion="NEGRA" momentoEjecucion="25060">
+  	<Nota>RE</Nota>
+  </ValorMusical>
+ <ValorMusical duracion="NEGRA" momentoEjecucion="27390">
+  	<Nota>MI</Nota>
+  </ValorMusical>
+ <ValorMusical duracion="NEGRA" momentoEjecucion="29734">
+  	<Nota>FA</Nota>
+  </ValorMusical>
+ <ValorMusical duracion="NEGRA" momentoEjecucion="31797">
+  	<Nota>SOL</Nota>
+  </ValorMusical>
+ <ValorMusical duracion="NEGRA" momentoEjecucion="34047">
+  	<Nota>LA</Nota>
+  </ValorMusical>
+ <ValorMusical duracion="NEGRA" momentoEjecucion="36269">
+  	<Nota>SI</Nota>
+  </ValorMusical>
+ <ValorMusical duracion="NEGRA" momentoEjecucion="38581">
+  	<Nota>DO</Nota>
+  </ValorMusical>
+ <ValorMusical duracion="NEGRA" momentoEjecucion="41156">
+  	<Nota>FA</Nota>
+	<Nota>LA</Nota>
+ </ValorMusical>
+ <ValorMusical duracion="NEGRA" momentoEjecucion="43609">
+  	<Nota>RE</Nota>
+	<Nota>LA</Nota>
+ </ValorMusical>
+ <ValorMusical duracion="NEGRA" momentoEjecucion="45812">
+  	<Nota>LA</Nota>
+	<Nota>FA</Nota>
+  </ValorMusical>
+
+ <ValorMusical duracion="REDONDA" momentoEjecucion="48875">
+  	<Nota>Silencio</Nota>
+  </ValorMusical>
+
+
+  	  	</Compas>
+ 	 </Compases>
+    </Partitura>
+
+

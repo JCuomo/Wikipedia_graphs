@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<Partitura nombre="The Beast" tempo="120">
+	  <Compases>
+		    <Compas>
+			   <ValorMusical duracion="NEGRA" momentoEjecucion="0">
+  				 <Nota>MI</Nota>
+ 			   </ValorMusical>
+			   <ValorMusical duracion="CORCHEA" momentoEjecucion="0">
+  				 <Nota>RE</Nota>
+ 			   </ValorMusical>
+			   <ValorMusical duracion="CORCHEA" momentoEjecucion="0">
+  				 <Nota>DO</Nota>
+ 			   </ValorMusical>
+			   <ValorMusical duracion="CORCHEA" momentoEjecucion="0">
+  				 <Nota>SI</Nota>
+ 			   </ValorMusical>
+			   <ValorMusical duracion="CORCHEA" momentoEjecucion="0">
+  				 <Nota>LA</Nota>
+ 			   </ValorMusical>
+			   <ValorMusical duracion="CORCHEA" momentoEjecucion="0">
+  				 <Nota>SOL</Nota>
+ 			   </ValorMusical>
+			   <ValorMusical duracion="CORCHEA" momentoEjecucion="0">
+  				 <Nota>FA</Nota>
+ 			   </ValorMusical>
+			   <ValorMusical duracion="NEGRA" momentoEjecucion="0">
+  				 <Nota>MI</Nota>
+ 			   </ValorMusical>
+			   <ValorMusical duracion="NEGRA" momentoEjecucion="0">
+  				 <Nota>MI</Nota>
+ 			   </ValorMusical>
+			   <ValorMusical duracion="CORCHEA" momentoEjecucion="0">
+  				 <Nota>RE</Nota>
+ 			   </ValorMusical>
+			   <ValorMusical duracion="CORCHEA" momentoEjecucion="0">
+  				 <Nota>DO</Nota>
+ 			   </ValorMusical>
+			   <ValorMusical duracion="CORCHEA" momentoEjecucion="0">
+  				 <Nota>SI</Nota>
+ 			   </ValorMusical>
+			   <ValorMusical duracion="CORCHEA" momentoEjecucion="0">
+  				 <Nota>LA</Nota>
+ 			   </ValorMusical>
+			   <ValorMusical duracion="CORCHEA" momentoEjecucion="0">
+  				 <Nota>SOL</Nota>
+ 			   </ValorMusical>
+			   <ValorMusical duracion="CORCHEA" momentoEjecucion="0">
+  				 <Nota>FA</Nota>
+ 			   </ValorMusical>
+			   <ValorMusical duracion="NEGRA" momentoEjecucion="0">
+  				 <Nota>MI</Nota>
+ 			   </ValorMusical>
+			   <ValorMusical duracion="NEGRA" momentoEjecucion="0">
+  				 <Nota>MI</Nota>
+ 			   </ValorMusical>
+			   <ValorMusical duracion="CORCHEA" momentoEjecucion="0">
+  				 <Nota>RE</Nota>
+ 			   </ValorMusical>
+			  		</Compas>
+ 	 </Compases>
+    </Partitura>

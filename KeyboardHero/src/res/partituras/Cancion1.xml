@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Partitura nombre="Cancion de Prueba" tempo="60">
+	  <Compases>
+		<Compas>
+   		
+  <ValorMusical duracion="CORCHEA" momentoEjecucion="3300">
+  				 <Nota>DO</Nota>
+ 			   </ValorMusical>
+ <ValorMusical duracion="CORCHEA" momentoEjecucion="3406">
+  				 <Nota>RE</Nota>
+ 			   </ValorMusical>
+ <ValorMusical duracion="NEGRA" momentoEjecucion="3700">
+  				 <Nota>MI</Nota>
+ 			   </ValorMusical>
+ <ValorMusical duracion="NEGRA" momentoEjecucion="0">
+  				 <Nota>FA</Nota>
+ 			   </ValorMusical>
+ <ValorMusical duracion="REDONDA" momentoEjecucion="0">
+ 	<Nota>Silencio</Nota>
+ </ValorMusical>
+
+
+
+
+		</Compas>
+ 	 </Compases>
+    </Partitura>

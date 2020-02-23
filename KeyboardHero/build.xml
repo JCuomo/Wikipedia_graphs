@@ -1,0 +1,28 @@
+<project name="Keyboard Hero" default="run" basedir=".">
+
+  <description>
+Keyboard Hero para Algoritmos III
+  </description>
+
+  <!-- Propiedades -->
+  <property name="src.home" value="src"/>
+  <property name="build.home" value="bin"/>
+
+  <!-- Objetivos -->
+  <target name="compile">
+    <mkdir dir="${build.home}"/>
+    <javac srcdir="${src.home}"
+      destdir="${build.home}">
+    </javac>
+  </target>
+
+  <target name="run" depends="compile">
+    <java classname="control.Juego"
+          classpath="${build.home}"/>
+  </target>
+
+  <target name="clean">
+    <delete dir="${build.home}"/>
+  </target>
+
+</project>
