@@ -67,22 +67,31 @@ object HITS2 {
     var hub_scores = pages.map(t => (t, 1.0))//base_set_compact.map{case(page,links) => (page,0.1)}
 
     // loop to converge the scores
-    for(it <- 1 to 5){
-      println("Step "+it)
+    for(it <- 1 to 25){
+      println("StepA "+it)
       // new score without normalization
       var authority_scores_aux : RDD[(Long, Double)] = base_set.join(hub_scores).map{case(from,(to,hub)) => (to,hub)}.reduceByKey((a,b) => a+b)
       // complete the RDD in case any link is missing because doesn't have incoming links. It's necessary?
-      authority_scores_aux = authority_scores_aux.union(authority_scores.keys.subtract(authority_scores_aux.keys).map(f=>(f,0.0)))
+      println("StepB "+it)
+      //authority_scores_aux = authority_scores_aux.union(authority_scores.keys.subtract(authority_scores_aux.keys).map(f=>(f,0.0)))
       // new score without normalization
+      println("StepC "+it)
       var hub_scores_aux : RDD[(Long, Double)] = inv_base_set.join(authority_scores).map{case(to,(from,auth)) => (from,auth)}.reduceByKey((a,b) => a+b)
       // complete the RDD in case any link is missing because doesn't have outgoing links. It's necessary?
-      hub_scores_aux = hub_scores_aux.union(hub_scores.keys.subtract(hub_scores_aux.keys).map(f=>(f,0.0)))
+      println("StepD "+it)
+      //hub_scores_aux = hub_scores_aux.union(hub_scores.keys.subtract(hub_scores_aux.keys).map(f=>(f,0.0)))
       // sum of scores without normalization
-			val hub_normalization = hub_scores_aux.values.sum()
-			val authority_normalization = authority_scores_aux.values.sum()
+			println("StepE "+it)
+      //val hub_normalization = hub_scores_aux.values.sum()
+      val hub_normalization = hub_scores_aux.map{case(k,v)=>v}.reduce(_+_)
+			println("StepF "+it)
+      //val authority_normalization = authority_scores_aux.values.sum()
+      val authority_normalization = authority_scores_aux.map{case(k,v)=>v}.reduce(_+_)
 			// normalizing the scores
-			hub_scores = hub_scores_aux.mapValues(h => h/hub_normalization)
-			authority_scores = authority_scores_aux.mapValues(a => a/authority_normalization)
+			println("StepG "+it)
+      hub_scores = hub_scores_aux.mapValues(h => h/hub_normalization)
+			println("StepH "+it)
+      authority_scores = authority_scores_aux.mapValues(a => a/authority_normalization)
     }
     // match the scores with the titles and sort the in descending order    
     val rankedByHub = hub_scores.join(titles).map{case(index,(score,title)) => (title,score)}.sortBy(_._2, false)
